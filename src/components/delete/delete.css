@@ -1,0 +1,39 @@
+.delete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+.delete p{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+}
+.delete div{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+.delete div button{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition: 0.7s ease;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.delete div button:hover{
+    transform: scale(1.1);
+}
+.delete div .del{
+    background: linear-gradient(175deg, red, rgb(253, 13, 13), rgb(250, 41, 41)) ;
+}
+.delete div .cancel{
+    background-color: transparent;
+    border: 1px solid #ffd900;
+}

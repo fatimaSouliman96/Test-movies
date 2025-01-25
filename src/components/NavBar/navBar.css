@@ -1,0 +1,124 @@
+a{
+    text-decoration: none;
+}
+nav{
+    max-width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #053F5E;
+    border-radius: 10px;
+    box-shadow: 2px 3px 20px 0px #000000;
+    padding: 0 1rem 0 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+nav img{
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+nav .web-menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: center;
+    gap: 4rem;
+    height: 100%;
+}
+nav .web-menu li{
+    cursor: pointer;
+}
+nav .web-menu li a span{
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #FFD700;
+    margin-top: 0.5rem;
+    transition: 0.7s ease;
+}
+nav .web-menu li a{
+    padding-top: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    transition: 0.7s ease;
+    height: 100%;
+    display: block;
+    border-bottom: 1px #FFD700;
+}
+nav .web-menu li:hover>a{
+    color: #FFD700;
+    border-bottom: 1px #FFD700;
+}
+nav .web-menu li:hover>a span{
+    width: 100%;
+}
+
+nav .user-icon{
+    display: flex;
+    align-items: center;
+  
+}
+nav .user-icon svg{
+    cursor: pointer;
+}
+
+nav .user-icon svg{
+    color: #FFD700;
+}
+nav .user-icon .user-info{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    align-items: start;
+    padding-left: 1rem;
+    background-color: rgba(0, 0, 0, 0.555);
+    border-radius: 10px;
+    height: 100px;
+    gap: 1rem!important;
+    color: white;
+    width: 100px;
+    top: 3rem;
+    right: 1rem;
+
+}
+.web-menu .active{
+    color: #FFD700;
+    border-bottom: 1px #FFD700;
+}
+.web-menu .active span{
+    width: 100%;
+}
+.mobial-mune{
+    display: none;
+    flex-direction: column;
+    gap: 0.2rem;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 10px;
+    height: 140px;
+    width: 100%;
+    padding: 1rem;
+    list-style: none;
+}
+.open{
+    display: flex!important;
+}
+.icon-mobil{
+    display: none;
+    color: #FFD700;
+    cursor: pointer;
+}
+
+@media(max-width: 645px){
+
+    .icon-mobil{
+        display: block;
+    }
+    nav .web-menu {
+        display: none;
+    }
+}

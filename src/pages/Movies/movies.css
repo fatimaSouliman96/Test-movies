@@ -1,0 +1,38 @@
+.movies{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.movies h1{
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+       
+}
+.movies .btn {
+    align-self: flex-end;
+}
+.movies .text-not-fount{
+    align-self: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+.btn{
+    float: right;
+    margin: 1rem 0; 
+    width: 30%;
+    background: linear-gradient(175deg, #FFD700, #f7df57, #f8edac) ;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;   
+    transition: 0.7s ease; 
+}
+.btn:hover{
+    transform: scale(1.1);
+}

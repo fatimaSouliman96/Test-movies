@@ -1,0 +1,33 @@
+.home{
+    max-width: 100%;
+    height: 100vh;
+}
+.home .input{
+    position: relative;
+    width: 20%;
+    margin: auto;
+}
+.home .input svg{
+    position: absolute;
+    color: white;
+}
+.home input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-left: 2rem;
+}
+.home input:focus{
+    color: #FFD700;
+    border-color: #FFD700;
+}
+.contener {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+}
