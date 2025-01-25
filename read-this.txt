@@ -1,0 +1,12 @@
+Hi! i'm fatima 
+This is the acceptance test that I worked on.
+
+I used MaterialUI and TypeScript in addition to Redux.
+
+For the data, I used JSON Server, so to be able to test the API, you must run JSON Server first using this command:
+
+json-server --watch db.json --port 3000 
+
+For caching, Redux does simple caching, but in order to do more professional caching, we need to use rtk Query, and I am learning it now, so I only used Redux. 
+
+thank yoy for your time ...
