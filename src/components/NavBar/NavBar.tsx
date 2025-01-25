@@ -26,7 +26,7 @@ export default function NavBar() {
     };
     return (
         <nav>
-            <img src="/public/Clapperboard.jfif" />
+            <h1 className="logo">Movies</h1>
             <ul className="web-menu">
                 <li><NavLink to={"/"} >Home<span></span></NavLink></li>
                 <li><NavLink to={"/movies"} >Movies<span></span></NavLink></li>
@@ -34,20 +34,20 @@ export default function NavBar() {
             </ul>
             <ul className={`mobial-mune`} >
 
-                    <Menu
-                        id="basic-menu"
-                        anchorEl={anchorElM}
-                        open={openM}
-                        onClose={handleCloseM}
-                        MenuListProps={{
-                            'aria-labelledby': 'basic-button',
-                        }}
-                    >
-                        <MenuItem onClick={handleCloseM}><li><NavLink to={"/"} >Home <span></span></NavLink></li></MenuItem>
-                        <MenuItem onClick={handleCloseM}><li><NavLink to={"/movies"} >Movies <span></span></NavLink></li></MenuItem>
-                        <MenuItem onClick={handleCloseM}> <li><NavLink to={"rr"}>Settings <span></span></NavLink></li></MenuItem>
-                    </Menu>
-             
+                <Menu
+                    id="basic-menu"
+                    anchorEl={anchorElM}
+                    open={openM}
+                    onClose={handleCloseM}
+                    MenuListProps={{
+                        'aria-labelledby': 'basic-button',
+                    }}
+                >
+                    <MenuItem onClick={handleCloseM}><li><NavLink to={"/"} >Home <span></span></NavLink></li></MenuItem>
+                    <MenuItem onClick={handleCloseM}><li><NavLink to={"/movies"} >Movies <span></span></NavLink></li></MenuItem>
+                    <MenuItem onClick={handleCloseM}> <li><NavLink to={"rr"}>Settings <span></span></NavLink></li></MenuItem>
+                </Menu>
+
             </ul>
 
             <div className="user-icon" >
@@ -69,9 +69,9 @@ export default function NavBar() {
                     aria-expanded={openM ? 'true' : undefined}
                     onClick={handleClickM}
                 >
-                    <BiMenu size={30} className="icon-mobil"/>
+                    <BiMenu size={30} className="icon-mobil" />
                 </Button>
-                
+
                 <div>
 
                     <Menu

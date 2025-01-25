@@ -15,6 +15,10 @@ nav{
     top: 0;
     z-index: 99;
 }
+nav .logo{
+    font-size: 2rem;
+    color: #FFD700;
+}
 nav img{
     width: 50px;
     height: 40px;
