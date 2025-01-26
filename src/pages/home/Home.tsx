@@ -20,10 +20,10 @@ export default function Home() {
         setResult(e.target.value)
 
         let newData = dataResult.filter(ele => ele.name === e.target.value)
-        
+
         setDataResult(newData)
         console.log(dataResult)
-        if(dataResult.length==0){
+        if (dataResult.length == 0) {
             console.log(dataResult.length)
         }
 
@@ -51,7 +51,7 @@ export default function Home() {
 
     useEffect(() => {
         dispatch(fetchPosts());
-      }, [dispatch]);
+    }, [dispatch]);
 
     return (
         <div className="home" >
@@ -59,7 +59,7 @@ export default function Home() {
                 <BiSearch size={22} />
                 <input type="search" value={result} onChange={e => handleCahngeSearch(e)} />
             </div>
-           {!result && <div className='contener' >
+            {!result && <div className='contener' >
                 {
                     counters.map(ele => {
                         return <Counter color={ele.color} title={ele.title} count={ele.count} icon={ele.icon} />
@@ -67,9 +67,10 @@ export default function Home() {
                 }
 
             </div>}
+            {/* show search results */}
             {result && <div className='table'>
-               {dataResult.length !== 0 ? <DataTable movies={true} columns={MoviesColumns} rows={dataResult ? dataResult : MoviesRows} /> : <p  > There are no results ... </p>}
-                </div>}
+                {dataResult.length !== 0 ? <DataTable movies={true} columns={MoviesColumns} rows={dataResult ? dataResult : MoviesRows} /> : <p  > There are no results ... </p>}
+            </div>}
         </div>
     )
 }
