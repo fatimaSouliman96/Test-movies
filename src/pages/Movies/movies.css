@@ -36,3 +36,14 @@
 .btn:hover{
     transform: scale(1.1);
 }
+
+@media(max-width: 627px){
+    .movies .btn {
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 475px){
+    .movies .btn {
+        font-size: 1.2rem;
+    }
+}

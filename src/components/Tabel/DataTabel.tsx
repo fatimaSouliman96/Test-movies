@@ -21,7 +21,7 @@ type Movie = {
 interface DataTableProps {
   columns: GridColDef[];
   movies?: boolean;
-  rows?: Movie[];
+  rows?: Movie[] | any[];
 }
 
 const DataTable = ({
